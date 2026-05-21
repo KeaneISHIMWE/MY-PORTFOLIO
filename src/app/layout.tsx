@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: `%s · Keanne Ishimwe`,
   },
   description:
-    "Cinematic portfolio of Keanne Ishimwe — full stack and Flutter developer focused on premium digital products, Convex-backed forms, and performance-first interfaces.",
+    "Portfolio of Keanne Ishimwe — full stack and Flutter developer focused on premium digital products, Convex-backed forms, and performance-first interfaces.",
   keywords: [
     "Keanne Ishimwe",
     "Full Stack Developer",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteTitle,
     description:
-      "Futuristic cinematic portfolio showcasing full-stack web, mobile apps, APIs, and AI-forward builds.",
+      "Modern portfolio showcasing full-stack web, mobile apps, APIs, and AI-forward builds.",
     type: "website",
     locale: "en_US",
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description:
-      "Futuristic cinematic portfolio showcasing full-stack web & mobile craftsmanship.",
+      "Modern portfolio showcasing full-stack web & mobile craftsmanship.",
   },
 };
 

@@ -12,7 +12,7 @@ export function Footer() {
         <div>
           <p className="font-display text-xl tracking-tight">{SITE.name}</p>
           <p className="mt-2 max-w-sm text-muted text-sm leading-relaxed">
-            Cinematic portfolios for founders who obsess over polish. Crafted with
+            Polished portfolios for founders who obsess over detail. Crafted with
             Next.js, Convex, Flutter, and a love for restrained motion design.
           </p>
           <div className="mt-5 flex gap-4 text-muted">

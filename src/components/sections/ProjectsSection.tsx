@@ -31,7 +31,7 @@ export function ProjectsSection() {
     <section id="projects" className="relative scroll-mt-36 py-24 sm:scroll-mt-32 sm:py-28">
       <SectionHeader
         eyebrow="Showcase"
-        title="Interactive build stories with cinematic fidelity"
+        title="Interactive build stories with premium fidelity"
         subtitle="Breadth across web apps, Flutter experiences, orchestrated intelligence, and full-stack builds."
       />
 

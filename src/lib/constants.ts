@@ -141,7 +141,7 @@ export const SERVICES = [
   {
     title: "UI/UX Development",
     description:
-      "Micro‑interaction design tokens, cinematic motion choreography, and systems that survive real content.",
+      "Micro‑interaction design tokens, thoughtful motion choreography, and systems that survive real content.",
   },
   {
     title: "Backend Systems",
@@ -164,7 +164,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "Our mobile release felt cinematic without sacrificing deadlines. Outstanding communication and relentless craft.",
+      "Our mobile release felt premium and immersive without sacrificing deadlines. Outstanding communication and relentless craft.",
     name: "Diego V.",
     role: "Head of Product · SaaS startup",
   },

@@ -162,38 +162,6 @@ function ConvexContactForm() {
   );
 }
 
-function ConvexMissingCard() {
-  return (
-    <div className="surface-glass rounded-[2.42rem] border border-[var(--border)] p-[2.5rem] sm:p-[3.06rem]">
-      <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-muted">
-        Convex handshake
-      </p>
-      <h3 className="mt-[1rem] font-display text-[2.06rem] font-semibold tracking-tight">
-        Wire up Convex to unlock inbox storage
-      </h3>
-      <p className="mt-[0.93rem] text-[16px] leading-relaxed text-muted">
-        Add{" "}
-        <code className="rounded bg-white/7 px-[0.45rem] py-[6px] text-[84%]">
-          NEXT_PUBLIC_CONVEX_URL
-        </code>{" "}
-        to <span className="font-mono">.env.local</span>, deploy your schema via{" "}
-        <span className="font-mono">npx convex dev</span>, then form submissions persist in your Convex
-        database.
-      </p>
-      <ul className="mt-[2.54rem] list-disc space-y-[0.7rem] pl-[1.2rem] text-[15px] text-muted">
-        <li>
-          Run <strong className="font-normal text-[var(--fg)]">npm run convex:dev</strong> locally
-        </li>
-        <li>Copy the deployment URL Convex prints after login</li>
-        <li>
-          Mirror the variable in{" "}
-          <span className="font-mono text-[var(--fg)]">Vercel → Environment Variables</span>
-        </li>
-      </ul>
-    </div>
-  );
-}
-
 export function ContactSection() {
   const convexReady = useConvexContactEnabled();
 
@@ -201,12 +169,14 @@ export function ContactSection() {
     <section id="contact" className="relative scroll-mt-36 py-24 sm:scroll-mt-32 sm:py-28">
       <SectionHeader
         eyebrow="Contact"
-        title="Have a cinematic build in mind?"
+        title="Have an ambitious build in mind?"
         subtitle="Brief the vision—I will tailor a pragmatic path from prototype to hardened release."
       />
-      <div className="relative mx-auto max-w-6xl px-6">
-        {convexReady ? <ConvexContactForm /> : <ConvexMissingCard />}
-      </div>
+      {convexReady ? (
+        <div className="relative mx-auto max-w-6xl px-6">
+          <ConvexContactForm />
+        </div>
+      ) : null}
     </section>
   );
 }

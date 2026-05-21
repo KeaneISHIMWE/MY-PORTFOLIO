@@ -42,7 +42,7 @@ export function HeroSection() {
             }}
             className="font-mono text-[10px] uppercase tracking-[0.55em] text-muted"
           >
-            Full-stack intuition · cinematic craft
+            Full-stack intuition · polished product craft
           </motion.div>
 
           <motion.h1

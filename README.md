@@ -1,4 +1,4 @@
-# Keanne ISHIMWE — cinematic portfolio
+# Keanne ISHIMWE — portfolio
 
 Next.js App Router portfolio with Tailwind CSS v4, Framer Motion, `next-themes`, and Convex for a production contact inbox.
 

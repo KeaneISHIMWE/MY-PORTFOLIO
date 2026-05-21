@@ -29,7 +29,7 @@ export function ServicesSection() {
     <section id="services" className="relative scroll-mt-36 py-24 sm:scroll-mt-32 sm:py-28">
       <SectionHeader
         eyebrow="Engagements"
-        title="Composable services calibrated for cinematic delivery"
+        title="Composable services calibrated for reliable delivery"
         subtitle="Zero-to-demo, platform-hardening, polished UI systems—whatever needs to feel unmistakably premium."
       />
 

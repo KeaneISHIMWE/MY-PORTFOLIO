@@ -41,7 +41,7 @@ export function Navbar({ activeId }: { activeId: string }) {
                 {SITE.name}
               </span>
               <span className="font-mono text-[9px] uppercase tracking-[0.45em] text-muted">
-                Cinematic Portfolio
+                Developer Portfolio
               </span>
             </span>
           </button>
