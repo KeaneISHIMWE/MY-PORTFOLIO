@@ -4,24 +4,17 @@ import { NAV_LINKS, SITE } from "@/lib/constants";
 import { BrandGithub, BrandLinkedin } from "@/components/icons/BrandIcons";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, Moon, Sparkles, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { Menu, Sparkles } from "lucide-react";
+import { useState } from "react";
 
 export function Navbar({ activeId }: { activeId: string }) {
   const [open, setOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
-
-  useEffect(() => setMounted(true), []);
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     el?.scrollIntoView({ behavior: "smooth", block: "start" });
     setOpen(false);
   };
-
-  const dark = mounted && resolvedTheme === "dark";
 
   return (
     <>
@@ -41,7 +34,7 @@ export function Navbar({ activeId }: { activeId: string }) {
                 {SITE.name}
               </span>
               <span className="font-mono text-[9px] uppercase tracking-[0.45em] text-muted">
-                Developer Portfolio
+                Software Developer
               </span>
             </span>
           </button>
@@ -57,7 +50,7 @@ export function Navbar({ activeId }: { activeId: string }) {
                   className={cn(
                     "relative rounded-full px-3 py-1 text-[13px] font-medium transition-colors",
                     active
-                      ? "text-white dark:text-[var(--fg)]"
+                      ? "text-[var(--fg)]"
                       : "text-muted hover:text-[var(--fg)]",
                   )}
                 >
@@ -101,52 +94,12 @@ export function Navbar({ activeId }: { activeId: string }) {
             </a>
 
             <button
-              aria-label={
-                mounted
-                  ? `Switch to ${dark ? "light" : "dark"} mode`
-                  : "Toggle appearance"
-              }
-              type="button"
-              disabled={!mounted}
-              className="hidden rounded-xl border border-white/14 bg-white/5 px-2.5 py-2 transition hover:bg-white/10 md:inline-flex"
-              onClick={() => setTheme(dark ? "light" : "dark")}
-            >
-              {!mounted ? (
-                <Moon className="h-4 w-4 opacity-65" />
-              ) : dark ? (
-                <Sun className="h-4 w-4 text-sky-200" />
-              ) : (
-                <Moon className="h-4 w-4 opacity-82" />
-              )}
-            </button>
-
-            <button
               aria-label={open ? "Close menu" : "Open menu"}
               type="button"
               className="inline-flex rounded-xl border border-white/14 bg-white/5 px-2.5 py-2 lg:hidden"
               onClick={() => setOpen((v) => !v)}
             >
               <Menu className="h-4 w-4" />
-            </button>
-
-            <button
-              aria-label={
-                mounted
-                  ? `Switch to ${dark ? "light" : "dark"} mode`
-                  : "Toggle appearance"
-              }
-              type="button"
-              disabled={!mounted}
-              className="inline-flex rounded-xl border border-white/14 bg-white/5 px-2.5 py-2 md:hidden"
-              onClick={() => setTheme(dark ? "light" : "dark")}
-            >
-              {!mounted ? (
-                <Moon className="h-4 w-4 opacity-65" />
-              ) : dark ? (
-                <Sun className="h-4 w-4 text-sky-200" />
-              ) : (
-                <Moon className="h-4 w-4 opacity-82" />
-              )}
             </button>
           </div>
         </nav>

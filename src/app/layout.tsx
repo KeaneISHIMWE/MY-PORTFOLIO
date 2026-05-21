@@ -61,10 +61,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#04060f" },
-    { media: "(prefers-color-scheme: light)", color: "#f4f7ff" },
-  ],
+  themeColor: "#04060f",
 };
 
 export default function RootLayout({
@@ -73,8 +70,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
-      className={`${syne.variable} ${outfit.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`dark ${syne.variable} ${outfit.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-bg text-[var(--fg)]">
         <AppProviders>{children}</AppProviders>

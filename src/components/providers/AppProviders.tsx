@@ -1,12 +1,8 @@
 "use client";
 
-import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import type { ReactNode } from "react";
 import { ConvexContactProvider } from "@/components/providers/ConvexContactProvider";
 
-export function AppProviders({ children }: { children: React.ReactNode }) {
-  return (
-    <ThemeProvider>
-      <ConvexContactProvider>{children}</ConvexContactProvider>
-    </ThemeProvider>
-  );
+export function AppProviders({ children }: { children: ReactNode }) {
+  return <ConvexContactProvider>{children}</ConvexContactProvider>;
 }

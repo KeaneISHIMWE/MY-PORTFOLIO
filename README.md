@@ -1,6 +1,6 @@
 # Keanne ISHIMWE — portfolio
 
-Next.js App Router portfolio with Tailwind CSS v4, Framer Motion, `next-themes`, and Convex for a production contact inbox.
+Next.js App Router portfolio with Tailwind CSS v4, Framer Motion, and Convex for a production contact inbox.
 
 ## Prerequisites
 
